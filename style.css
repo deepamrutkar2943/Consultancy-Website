@@ -1,0 +1,318 @@
+*{
+    box-sizing: border-box;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: azure;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/* Navbar */
+.navbar{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+}  
+.navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0;
+    height: 95%;
+    width:100%;
+    z-index: -1;
+}
+
+.logo{
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: inherit;
+}
+.logo img{
+    height: 50px;
+    filter: invert();
+}
+.logo h1{
+    color: white;
+    padding-left: 8px;
+    margin: 25px 5px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    margin-left: 100px; 
+}
+.item{
+    /* padding: 0px 45px; */
+    font-weight: bolder;
+    padding: 5px 65px;
+    cursor: pointer;
+    margin-left: -35px;
+}
+.item a:hover{
+    cursor: pointer;
+    /* color:blue; */
+    text-decoration: underline 1px;
+}
+ul .item:last-child {
+    border: 2px solid rgba(53, 53, 248);
+    border-radius: 15px;
+    padding: 5px 20px;
+    margin-left: 200px;
+    background-color: rgb(53, 53, 248);
+    /* margin-right: 50px; */
+}
+ul .item:last-child:hover a{
+    color: black;
+    transition: ease-in-out 0.25s;
+    transform: scale(1.01);
+}
+
+/* midsection */
+.midsec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 200px;
+    height: 770px;
+    font-weight: bolder;
+    
+}
+.midsec .right img{
+    margin-left: 60px;
+}
+.midsec .left h1{
+    font-size: 55px;
+    margin-top: 100px;
+    font-weight: bolder;
+}
+.midsec p{
+    font-size: 23px;
+}
+.midsec .left button{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: white;
+    border: 2px solid rgb(53, 53, 248);
+    border-radius: 15px;
+    padding: 5px 12px;
+    background-color: rgb(53, 53, 248);
+    cursor: pointer;
+    margin-top: 15px;
+}
+hr {
+    width: 95%;
+    border: 2px solid black;
+    z-index: -1;
+}
+/* section */
+.sec{
+    margin-left: 70px;
+    margin-right: 300px;
+}
+.sec h1{
+    padding: 5px 5px 5px 15px ;
+    border-left: 6px solid black;
+}
+.sec p{
+    margin-left: 21px;
+    font-weight: bold;
+}
+/*  Srvices */
+
+.services{
+    display: flex;
+    background-color: blue;
+    height: 35pc;
+    align-items: center;
+    margin:0px -8px 0px -8px;
+}
+.ser{
+    margin-top: 100px;
+    margin-left: 70px;
+    padding: 5px 5px 5px 15px ;
+    border-left: 6px solid black;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    height: 28pc;
+    width: 650px;
+    margin: 5px 10px;
+    padding: 5px 20px 5px 20px;
+    margin-left: 70px;
+    margin-right: 20px;
+    border-radius: 5px;
+    font-weight: bolder;
+    background-color: white;
+    box-shadow: 10px 10px black;
+}
+.box h2{
+    padding-left: 10px;
+}
+.box img{
+    height: 60px;
+}
+.box button{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: white;
+    border: 2px solid rgb(53, 53, 248);
+    border-radius: 15px;
+    padding: 5px 12px;
+    background-color: rgb(53, 53, 248);
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+/* Products */
+.box1{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    height: 28pc;
+    width: 650px;
+    margin: 5px 10px;
+    padding: 5px 20px 5px 20px;
+    margin-left: 70px;
+    margin-right: 20px;
+    border-radius: 5px;
+    font-weight: bolder;
+    background-color: white;
+    box-shadow: 10px 10px black;
+}
+.box1 h2{
+    padding-left: 50px;
+}
+.box1 img{
+    height: 60px;
+}
+.box1 button{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: white;
+    border: 2px solid rgb(53, 53, 248);
+    border-radius: 15px;
+    padding: 5px 12px;
+    background-color: rgb(53, 53, 248);
+    cursor: pointer;
+    margin-top: 15px;
+}
+/* Form */
+.connect{
+    margin-left: 40pc;
+    margin-right: 8pc;
+}
+.connect input{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    display: inline-block;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(89, 86, 86);
+    width: 100%;
+    outline: none;
+    padding: 8px 15px 8px 0px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #777;
+    margin-bottom: 1.5em;
+}
+.connect textarea{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(89, 86, 86);
+    width: 100%;
+    display: inblock;
+    height: 150px;
+    outline: none;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #000000;
+    resize: none;
+    padding: 8px 15px 8px 0px;
+    margin-bottom: 1.5em;
+}
+/* Footer */
+footer{
+    font-weight: bolder;
+    background-color: rgb(40, 39, 39);
+    color: white;
+    margin: 0px -8px -8px -8px;
+}
+footer .top{
+    display: flex;
+}
+footer .c1 {
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 145px 35px 191px 1px;
+    border-right: 2px solid white;
+}
+footer .c1 img{
+    filter: invert();
+    height: 80px;
+    padding-left: 105px;
+    
+}
+footer .c1 h1{
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+footer .c2{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    margin-left: 120px;
+    line-height: 2.5;
+}
+footer .c3{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    margin-left: 140px;
+    line-height: 2.5;
+}
+footer .c2, .c3 li{
+    list-style: none;
+}
+footer .c2 img{
+    filter: invert();
+    height: 20px;
+    padding-right: 5px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+footer .c3 img{
+    filter: invert();
+    height: 20px;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+.bot{
+    border: 1px solid rgb(255, 255, 255);
+}
+footer .bottom
+{
+    padding-bottom: 10px;
+}
+
